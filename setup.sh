@@ -1,4 +1,4 @@
 #!/bin/bash
 
-mv -i .bashrc ~/
-mv -i .bash_profile ~/
+cp -i .bashrc ~/
+cp -i .bash_profile ~/
