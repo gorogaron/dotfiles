@@ -15,10 +15,12 @@ while test $# -gt 0; do
   esac
 done
 
+dotfiles_path=`dirname $0`
+
 if $force_copy ; then
-    yes | cp .bashrc ~/
-    yes | cp .bash_profile ~/
+    yes | cp ${dotfiles_path}/.bashrc ~/
+    yes | cp ${dotfiles_path}/.bash_profile ~/
 else
-    cp -i .bashrc ~/
-    cp -i .bash_profile ~/
+    cp -i ${dotfiles_path}/.bashrc ~/
+    cp -i ${dotfiles_path}/.bash_profile ~/
 fi
